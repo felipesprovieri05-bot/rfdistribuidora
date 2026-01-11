@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-inter: 'Inter', sans-serif;
+}
+
+body {
+  font-family: var(--font-inter), sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+.glass {
+  background: rgba(18, 18, 18, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.orange-glow:hover {
+  box-shadow: 0 0 20px rgba(255, 69, 0, 0.4);
+}
+
+/* Scrollbar customizado */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FF4500;
+  border-radius: 4px;
+}
+
+/* Custom scrollbar para áreas internas */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255, 69, 0, 0.3);
+  border-radius: 10px;
+}
+
+/* Estilos para options dentro de selects - garantindo legibilidade */
+select option {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  padding: 8px 12px;
+}
